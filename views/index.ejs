@@ -33,6 +33,10 @@
 <body>
 
 
+
+    <!-- ______________________________________form_________________________________________ -->
+
+
     <!-- ________________________SHREE GANESHAYE NAMAHA____________________________ -->
     <!-- ______________________________________________Navigation_______________________________________________ -->
     <div class="topheader d-none d-md-flex">
@@ -40,19 +44,16 @@
             <div class="topheader_left"><i class="fab fa-telephone text-white"></i>+91-1234567890</div>
             <div class="topheader_right">
                 <ul class="social">
-                    <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"
-                                aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"
-                                aria-hidden="true"></i></a>
+                    <li><a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png" alt=""></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank"><img src="img/twitter.png" alt=""></a>
                     </li>
-                    <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"
-                                aria-hidden="true"></i></a>
+                    <li><a href="https://www.youtube.com" target="_blank"><img src="img/youtube.png" alt=""></a>
                     </li>
-                    <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"
-                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" alt=""></a>
+                    </li>
                 </ul>
-
-                <a class="topheader_btn" href="">Join Now</a>
+                <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="topheader_btn">Join Now</a>
+                <!-- <button id="popup" onclick="div_show()"></button> -->
                 <div class="dropdown ">
                     <a class="dropdown-toggle text-white language" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -80,33 +81,123 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="/about">About</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Services
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="bilse">
+                          Our Services
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <ul class="dropdown-menu animate__animated animate__fadeInDown p-0 w-100" aria-labelledby="navbarDropdown">
+                          <div class="container mega-menu-container mt-3">
+                            <div class="row">
+                              <div class="exit_btn d-none d-lg-block"><i class="fas fa-times-circle"></i></div>
+                              <div class="col-lg-3 col-md-6 col-12 d-service-animate mega-service">
+                                <h2 class="mega_service_title">
+                                  Web Development </h2>
+                                <ul class="mega_service_links">
+                                  <li><a class="mega_service_link" href="website_design.html"><i
+                                        class="service_icons bi bi-headset"></i> Website
+                                      Design</a></li>
+                                  <li><a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Website
+                                      Design</a></li>
+                                  <li><a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Website
+                                      Design</a></li>
+                                  <li><a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Website
+                                      Design</a></li>
+                                  <li><a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Logo
+                                      Design</a></li>
+                                  <li><a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Logo
+                                      Design</a></li>
+                                  <li><a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Logo
+                                      Design</a></li>
+                                  <li><a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Logo
+                                      Design</a></li>
+                                </ul>
+                              </div>
+                              <div class="col-lg-3 col-md-6 col-12 mega-service">
+                                <h2 class="mega_service_title">Software Development</h2>
+                                <ul class="mega_service_links">
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> B2B
+                                      Software</a></li>
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> B2B
+                                      Software</a></li>
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> B2C
+                                      Software</a></li>
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> B2C
+                                      Software</a></li>
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> B2C
+                                      Software</a></li>
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Reseller
+                                      Software</a></li>
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Reseller
+                                      Software</a></li>
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Reseller
+                                      Software</a></li>
+                                </ul>
+                              </div>
+                              <div class="col-lg-3 col-md-6 col-12 mega-service">
+                                <h2 class="mega_service_title">
+                                  API Services</h2>
+                                <ul class="mega_service_links ">
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> BBPS
+                                      API</a></li>
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Recharge
+                                      API</a></li>
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Aeps
+                                      API</a></li>
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Pan Card
+                                      API</a></li>
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Pay Out
+                                      API</a></li>
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> QR Code
+                                      Scanner API</a>
+                                  </li>
+                                  <li class="mega_service_link"> <a class="mega_service_link" href=""><i
+                                        class="service_icons bi bi-headset"></i> E Collection API</a></li>
+                                  <li class="mega_service_link"> <a class="mega_service_link" href=""><i
+                                        class="service_icons bi bi-headset"></i> Money Transfer API</a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-lg-3 col-md-6 col-12 mega-service">
+                                <h2 class="mega_service_title">
+                                  Android Devlopment </h2>
+                                <ul class="mega_service_links">
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Website
+                                      Design</a></li>
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Website
+                                      Design</a></li>
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Website
+                                      Design</a></li>
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Website
+                                      Design</a></li>
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Logo
+                                      Design</a></li>
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Logo
+                                      Design</a></li>
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Logo
+                                      Design</a></li>
+                                  <li> <a class="mega_service_link" href=""><i class="service_icons bi bi-headset"></i> Logo
+                                      Design</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
                         </ul>
-                    </li>
+                      </li>
+            
                     <li class="nav-item">
-                        <a class="nav-link">Contact</a>
+                        <a class="nav-link" href="/contact">Contact</a>
                     </li>
                     </li>
 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Agent Login</a>
+                        <a class="nav-link nav_login_btn">Agent Login</a>
                     </li>
                     </li>
 
@@ -161,10 +252,10 @@
                             <div class="col-md-5 col-lg-6">
                                 <div class="banner_img2">
                                     <picture>
-                                        <source srcset="img/m3cropped.png" type="image/png"
+                                        <source srcset="img/aesp.png" type="image/png"
                                             class="img-fluid animate__animated animate__fadeInRight"
                                             alt="banner-4th-image">
-                                        <img srcset="img/m3cropped.png" type="image/png"
+                                        <img srcset="img/aesp.png" type="image/png"
                                             class="img-fluid animate__animated animate__fadeInRight"
                                             alt="banner-4th-image">
                                     </picture>
@@ -337,11 +428,11 @@
                             data-wow-duration="1s" data-wow-delay=".2s"
                             style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: zoomIn;">
                             <div class="service-icon">
-                                <img src="img/service_multi_c3.png" alt="search engine" class="img-fluid">
+                                <img src="img/services_logo/aeps.png" alt="search engine" class="img-fluid">
                             </div>
                             <!-- Service icon end -->
                             <div class="service-content">
-                                <h3>PHP Developers</h3>
+                                <h3>AEPS</h3>
                                 <p>Harness the power of latest technologies &amp; digital assets that our experienced
                                     and dynamic PHP
                                     Developers bring forth.</p><br>
@@ -359,11 +450,11 @@
                             data-wow-duration="1s" data-wow-delay=".4s"
                             style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: zoomIn;">
                             <div class="service-icon">
-                                <img src="img/service_multi_c3.png" alt="search engine" class="img-fluid">
+                                <img src="img/services_logo/money tranfser.png" alt="search engine" class="img-fluid">
                             </div>
                             <!-- Service icon end -->
                             <div class="service-content">
-                                <h3>Laravel Development</h3>
+                                <h3>MONEY TRANSFER</h3>
                                 <p>Add power to your web presence through our cutting edge and highly customizable
                                     Laravel web
                                     development services</p><br>
@@ -380,11 +471,11 @@
                             data-wow-duration="1s" data-wow-delay=".6s"
                             style="visibility: visible; animation-duration: 1s; animation-delay: 0.6s; animation-name: zoomIn;">
                             <div class="service-icon">
-                                <img src="img/service_multi_c3.png" alt="search engine" class="img-fluid">
+                                <img src="img/services_logo/micro atm.png" alt="search engine" class="img-fluid">
                             </div>
                             <!-- Service Icon End -->
                             <div class="service-content">
-                                <h3>WordPress Development</h3>
+                                <h3>MICRO ATM</h3>
                                 <p>Expand the reach of your by choosing our industry best wordpress e-commerce
                                     development </p><br>
                                 <a href="wordpress-e-commerce-development-services"><button type="button"
@@ -409,7 +500,7 @@
                             </div>
                             <!-- Service icon end -->
                             <div class="service-content">
-                                <h3>Angular Js</h3>
+                                <h3>MOBILE RECHARGE</h3>
                                 <p>Give your business a distinct edge in the global arena through our smart and
                                     high-tech Angular Js
                                     solutions</p><br>
@@ -430,7 +521,7 @@
                             </div>
                             <!-- Service icon end -->
                             <div class="service-content">
-                                <h3>NodeJs</h3>
+                                <h3>BBPS</h3>
                                 <p>Want to experience the best backend for your business? Our Node Js experts can give
                                     you high quality,
                                     super fast backend!</p><br>
@@ -450,7 +541,7 @@
                             </div>
                             <!-- Service Icon end-->
                             <div class="service-content">
-                                <h3>Magento Development</h3>
+                                <h3>PAN CARD</h3>
                                 <p>Our Magento Developers can offer you with highly functional, visually appealing &amp;
                                     user centric
                                     websites and e-stores</p><br>
@@ -477,7 +568,7 @@
                             </div>
                             <!-- Service icon end -->
                             <div class="service-content">
-                                <h3>Angular Js</h3>
+                                <h3>AYUSHMAN CARD</h3>
                                 <p>Give your business a distinct edge in the global arena through our smart and
                                     high-tech Angular Js
                                     solutions</p><br>
@@ -498,7 +589,7 @@
                             </div>
                             <!-- Service icon end -->
                             <div class="service-content">
-                                <h3>NodeJs</h3>
+                                <h3>TRAVELS BOOKING</h3>
                                 <p>Want to experience the best backend for your business? Our Node Js experts can give
                                     you high quality,
                                     super fast backend!</p><br>
@@ -518,7 +609,7 @@
                             </div>
                             <!-- Service Icon end-->
                             <div class="service-content">
-                                <h3>Magento Development</h3>
+                                <h3>INSURANCE</h3>
                                 <p>Our Magento Developers can offer you with highly functional, visually appealing &amp;
                                     user centric
                                     websites and e-stores</p><br>
@@ -588,10 +679,76 @@
                 style="position: relative; margin: auto; inset: 0px auto auto 0px; box-sizing: border-box; width: 100%;">
 
                 <div class="wc_us">
-                    <div class="home_sub_heading">
+                    <!-- <div class="home_sub_heading">
                         <h2>WHY CHOOSE US</h2>
-                    </div>
+                    </div> -->
+
+
                     <div class="container">
+                        <div class="row">
+                            <div class="col-md-10 wc_img_col">
+                                <div class="img_div">
+                                    <img src="img/kisan.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="wc_content_card">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, rerum?</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row wc_card_main_row">
+                            <div class="col-12 wc_card_main_col">
+                                <div class="row">
+                                    <div class="col-md-4 wc_card_col">
+                                        <div class="wc_card">
+                                            <i class="fab fa-facebook"></i>
+                                            <h3>True Partner</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 wc_card_col">
+                                        <div class="wc_card"><i class="fab fa-facebook"></i>
+                                            <h3>True Partner</h3></div>
+                                    </div>
+                                    <div class="col-md-4 wc_card_col">
+                                        <div class="wc_card"><i class="fab fa-facebook"></i>
+                                            <h3>True Partner</h3></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 wc_card_col">
+                                        <div class="wc_card"><i class="fab fa-facebook"></i>
+                                            <h3>True Partner</h3></div>
+                                    </div>
+                                    <div class="col-md-4 wc_card_col">
+                                        <div class="wc_card"><i class="fab fa-facebook"></i>
+                                            <h3>True Partner</h3></div>
+                                    </div>
+                                    <div class="col-md-4 wc_card_col">
+                                        <div class="wc_card"><i class="fab fa-facebook"></i>
+                                            <h3>True Partner</h3></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- <div class="container">
 
 
                         <div class="row ha-experience__experiences">
@@ -702,7 +859,7 @@
                             </div>
                         </div>
 
-                    </div>
+                    </div> -->
                 </div>
             </section>
 
@@ -729,7 +886,7 @@
             style="inset: auto; margin: 0px; display: block; position: relative; box-sizing: content-box; min-height: 619px; height: auto; padding-top: 0px; padding-bottom: 0px;">
             <section class="panel"
                 style="position: relative; margin: auto; inset: 0px auto auto 0px; box-sizing: border-box; width: 100%;">
-                <div class="home_sub_heading bg_black">
+                <div class="home_sub_heading bg_blue">
                     <h2>OUR GALLARY</h2>
                 </div>
 
@@ -1011,14 +1168,14 @@
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 order-1 order-md-2 copyright">
                         <ul class="social">
-                            <li class="mr-3"><a href="https://www.facebook.com" target="_blank"><i
-                                        class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                            <li class="mr-3"><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"
-                                        aria-hidden="true"></i></a></li>
-                            <li class="mr-3"><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"
-                                        aria-hidden="true"></i></a></li>
-                            <li class="mr-3"><a href="https://www.instagram.com" target="_blank"><i
-                                        class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                            <li class="mr-3"><a href="https://www.facebook.com" target="_blank"><img
+                                        src="img/facebook.png" alt=""></a></li>
+                            <li class="mr-3"><a href="https://www.twitter.com" target="_blank"><img
+                                        src="img/twitter.png" alt=""></a></li>
+                            <li class="mr-3"><a href="https://www.youtube.com" target="_blank"><img
+                                        src="img/youtube.png" alt=""></a></li>
+                            <li class="mr-3"><a href="https://www.instagram.com" target="_blank"><img
+                                        src="img/instagram.png" alt=""></a></li>
                         </ul>
 
 
@@ -1031,6 +1188,85 @@
 
 
 
+        <!-- _______________________________________contact form___________________________________ -->
+
+
+        <div class="modal fade modalform" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            style="display: none;" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title" id="exampleModalLabel"><strong>Let's <span>Build</span> Your App</strong>
+                            <span>Book your FREE call<br>with our technical consultant now.</span>
+                        </p>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">×</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="message_popup" style="text-align:center; padding-bottom: 15px; display: none;"></div>
+                        <form id="contact_us_form_popup" method="post" class="form-horizontal popup contact_us_form"
+                            novalidate="" enctype="multipart/form-data" accept-charset="utf-8">
+                            <div class="row">
+                                <div class="col-sm-6 requireSign">
+                                    <input type="text" placeholder="Name" id="name_popup" name="name"
+                                        class="form-control">
+                                </div>
+                                <div class="col-sm-6 requireSign">
+                                    <input type="email" placeholder="Email" id="email_popup" name="email"
+                                        class="form-control">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" placeholder="Phone No." id="phone_popup" name="phone"
+                                        class="form-control">
+                                </div>
+                                <div class="col-sm-6">
+                                    <select id="budget_popup" name="budget" class="form-control">
+                                        <option value="" selected="selected">Budget</option>
+                                        <option value="$5K - $10K">$5K - $10K</option>
+                                        <option value="$10K - $50K">$10K - $50K</option>
+                                        <option value="$50K - $100K">$50K - $100K</option>
+                                        <option value="Above $100K">Above $100K</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 requireSign">
+                                    <input type="text" placeholder="Country" name="country" id="country_popup"
+                                        class="form-control">
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <input type="file" name="file" class="custom-file-input form-control">
+                                </div>
+                                <div class="col-sm-12 requireSign">
+                                    <textarea placeholder="Your Message" rows="2" name="message" id="message_popup_form"
+                                        class="form-control"></textarea>
+                                </div>
+                                <div class="col-sm-12 checkbox_abs ">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input check" value="1"
+                                            name="requested_nda" id="requested_nda_popup">
+                                        <label class="custom-control-label" for="requested_nda_popup">Request NDA for a
+                                            Confidential Consultation.</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 checkbox_abs ">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input check" value="1"
+                                            name="subscribe_newsletter" id="subscribe_newsletter_popup">
+                                        <label class="custom-control-label" for="subscribe_newsletter_popup">Subscribe
+                                            our newsletter</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 mt-3">
+                                    <input type="submit" class="btn btn-primary center-block"
+                                        value="Yes, I want to talk to an expert" style="width: 100%;">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ______________________________contact form end ______________________________________- -->
         <script src="js/wow.min.js"></script>
         <script>
             new WOW().init();
@@ -1131,7 +1367,16 @@
 
         </script>
 
-
+        <script>
+            //Function To Display Popup
+            function div_show() {
+                document.getElementById('abc').style.display = "block";
+            }
+            //Function to Hide Popup
+            function div_hide() {
+                document.getElementById('abc').style.display = "none";
+            }
+        </script>
 
         <script src="js/index.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
