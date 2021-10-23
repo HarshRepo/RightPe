@@ -407,6 +407,11 @@ a {
     font-size: 1.5rem;
     color: white;
 }
+@media (min-width: 576px){
+.modal-dialog {
+    margin: 8.75rem auto !important;
+}
+}
 
 
 /* ________________________About Us________________________________ */
@@ -473,7 +478,6 @@ line-height: 2;
     margin: 30px;
     font-size: 1.3rem;
     letter-spacing: 1.4px;
-    font-weight: 300;
 }
 
 .home_about_text h2 {
@@ -517,10 +521,24 @@ line-height: 2;
     position: relative;
     z-index: 2;
     height: 126px;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
     background-repeat: no-repeat;
     background-position: center;
 }
+.service-icon img{
+    width: 80px;
+}
+/* .icon-huge{
+    zoom:1;
+    -moz-transform:scale(1);
+    -moz-transform-origin: 0 0;
+}
+.sprite {
+	background: url('../img/css_sprites.png') no-repeat -110px -290px;
+	width: 80px;
+	height: 80px;
+} */
+
 
 .tw-service-box:hover {
     box-shadow: 0 15px 28px 0 rgba(0, 0, 0, 0.46), 0 2px 4px 0 rgba(5, 52, 153, 0.26);
