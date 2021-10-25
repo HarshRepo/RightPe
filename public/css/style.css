@@ -15,7 +15,8 @@
     --clr-primary-dark: #334960;
     --clr-primary: #2196f3;
 }
-.btn-primary{
+
+.btn-primary {
     background-color: #334960 !important;
     border-color: #334960 !important;
 }
@@ -52,6 +53,41 @@ a {
 
 .py-60 {
     padding: 60px 0;
+}
+
+.typewriter {
+    font-family: Courier, monospace;
+    display: inline-block;
+}
+
+.typewriter-text {
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typing 5s steps(28, end) infinite, blink .5s step-end infinite;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 500;
+    border-right: 2px solid white;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from {
+        width: 0%
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: white;
+    }
 }
 
 .topheader {
@@ -112,7 +148,6 @@ a {
 
 .language .dropdown-menu.show {
     z-index: 20949;
-    
 }
 
 .language .dropdown-menu.show .dropdow-item {
@@ -218,14 +253,13 @@ a {
     .dropdown-item:hover {
         background-color: #F08815 !important;
     }
-    .dropdown-item{
+    .dropdown-item {
         color: white !important;
     }
     .nav-item .submenu-left {
         right: 100%;
         left: auto;
     }
-
     .dropdown-menu>li:hover>.submenu {
         display: block;
     }
@@ -309,7 +343,7 @@ a {
     position: relative;
     width: 40px;
     height: 5px;
-    background-color:orangered;
+    background-color: orangered;
     border: 1px solidorangered;
     margin: 20px auto;
 }
@@ -411,17 +445,17 @@ a {
     border-radius: 30px !important;
 }
 
-.model_btn_div input{
+.model_btn_div input {
     font-weight: 700;
     font-size: 1.5rem;
     color: white;
 }
-@media (min-width: 576px){
-.modal-dialog {
-    margin: 8.75rem auto !important;
-}
-}
 
+@media (min-width: 576px) {
+    .modal-dialog {
+        margin: 8.75rem auto !important;
+    }
+}
 
 /* ________________________About Us________________________________ */
 
@@ -480,7 +514,7 @@ line-height: 2;
     text-align: center;
 } */
 
-.home_about_text{
+.home_about_text {
     position: relative;
     text-align: center;
     color: white;
@@ -494,7 +528,8 @@ line-height: 2;
     margin: 0 5px;
     padding-bottom: 30px;
 }
-.home_about_text p{
+
+.home_about_text p {
     text-align: justify;
     line-height: 1.6rem;
     padding-bottom: 3rem;
@@ -505,17 +540,17 @@ line-height: 2;
 }
 
 .home_about_column2 {
-    background-color:#F08815;
+    background-color: #F08815;
 }
 
 .home_about_row {
     --bs-gutter-x: 0 !important;
 }
-.home_about_text .btn{
-    
+
+.home_about_text .btn {
     padding: .475rem 1rem;
-    
 }
+
 /* ______________________________Our Services____________________________ */
 
 .tw-service-box {
@@ -534,16 +569,18 @@ line-height: 2;
     background-repeat: no-repeat;
     background-position: center;
 }
-.service-icon img{
+
+.service-icon img {
     width: 120px;
 }
 
-.service-icon:hover img{
+.service-icon:hover img {
     visibility: visible;
     animation-duration: 1300ms;
     animation-delay: 0ms;
     animation-name: pulse;
 }
+
 /* .icon-huge{
     zoom:1;
     -moz-transform:scale(1);
@@ -555,14 +592,13 @@ line-height: 2;
 	height: 80px;
 } */
 
-
 .tw-service-box:hover {
     box-shadow: 0 15px 28px 0 rgba(0, 0, 0, 0.46), 0 2px 4px 0 rgba(5, 52, 153, 0.26);
     border: solid 1px #f0f1f2;
     background-color: #ffffff;
 }
 
-.bg_red{
+.bg_red {
     background-color: orangered;
 }
 
@@ -606,19 +642,18 @@ line-height: 2;
     width: 479px;
     height: 300px;
     color: white;
-    background-color:#F08815;
+    background-color: #F08815;
     position: absolute;
     right: 5.5%;
-
-    
-   
 }
-.wc_content_card h2{
+
+.wc_content_card h2 {
     text-align: center;
     font-family: "Poppins", sans-serif;
     margin-top: 20px;
 }
-.wc_content_card p{
+
+.wc_content_card p {
     font-weight: 400;
     margin: 15px;
     line-height: 1.6;
@@ -629,16 +664,18 @@ line-height: 2;
 }
 
 .wc_card_main_row {
-   position: absolute;
-   bottom: 20px;
+    position: absolute;
+    bottom: 20px;
     width: 50vw;
 }
-.wc_card_main_col{
+
+.wc_card_main_col {
     margin-left: 70px;
 }
-.wc_card_col{
-padding-left: 0 !important;
-width: 30px;
+
+.wc_card_col {
+    padding-left: 0 !important;
+    width: 30px;
 }
 
 .wc_card {
@@ -650,13 +687,17 @@ width: 30px;
     margin-bottom: .7rem;
     background-color: rgb(220, 215, 215);
 }
-.wc_card i{
-    font-size: 50px;
-    margin-top:30px;
-    margin-bottom:35px;
+
+.wc_card img {
+    width: 100px;
+    margin-top: 10px;
 }
 
-
+.wc_card h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 15px;
+}
 
 .ha-experience__experiences {
     margin-top: 5rem !important;
@@ -761,7 +802,7 @@ width: 30px;
 }
 
 .gallary_text h2 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: white;
 }
 
@@ -781,21 +822,24 @@ width: 30px;
     width: 100%;
     object-fit: fill;
 }
-.bg_gradient{
-    background: linear-gradient(to right, #334960 60%, #B1273C 60%);
 
+.bg_gradient {
+    background: linear-gradient(to right, #334960 60%, #B1273C 60%);
 }
 
 .bg_yellow {
     background-color: #F08815 !important;
 }
-.bg_dark{
+
+.bg_dark {
     background-color: #334960 !important;
 }
+
 .bg_light {
     background-color: #c7e1ff;
 }
-.bg_blue{
+
+.bg_blue {
     background-color: blue;
 }
 
@@ -854,16 +898,14 @@ width: 30px;
     margin-left: 100px;
     position: relative;
     top: 60px;
-
 }
-
 
 .ma_text p {
     font-weight: 400;
     font-size: 1.325rem;
     margin-bottom: 20px;
     text-align: justify;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 .ma_input {
@@ -903,7 +945,6 @@ width: 30px;
     margin-left: 50px;
 }
 
-
 .talk_btn {
     border: 1px solid black;
     border-radius: 10px;
@@ -913,7 +954,8 @@ width: 30px;
     font-weight: 600;
     background-color: #334960;
 }
-.talk_div{
+
+.talk_div {
     display: flex;
     align-items: center;
     width: 100%;
@@ -1263,7 +1305,8 @@ footer {
 .divider {
     width: 100%;
 }
-.footer-bottom hr{
+
+.footer-bottom hr {
     margin: 0;
 }
 
