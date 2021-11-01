@@ -357,7 +357,7 @@ a {
 }
 
 .carousel-caption {
-    right: 8% !important;
+    right: 0 !important;
     left: 7% !important;
     top: 20%;
 }
