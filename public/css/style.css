@@ -36,12 +36,30 @@
 }
 .icon-s5{
     zoom: .5;
+-ms-zoom: 0.5;
+-webkit-zoom: 0.5;
+-moz-transform:  scale(0.5);
+
 }
 .icon-s63{
     zoom: .63;
+-ms-zoom: 0.63;
+-webkit-zoom: 0.63;
+-moz-transform:  scale(0.63);
+
 }
 .icon-s43{
     zoom: .43;
+-ms-zoom: 0.43;
+-webkit-zoom: 0.43;
+-moz-transform:  scale(0.43);
+-moz-transform-origin: top;
+}
+.wc_img_div{
+    height: 100px;
+}
+.wc_img_div div{
+    margin-top: 10px;
 }
 .bg-Best_Commission_Extra_Earn {
     width: 200px; height: 200px;
@@ -237,7 +255,7 @@ a {
 .topheader_btn {
     text-decoration: none;
     color: white;
-    /* height: 100%; */
+    height: 100%;
     padding: 5px 15px;
     font-size: 11px;
     margin-left: 10px;
@@ -252,6 +270,8 @@ a {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
+    align-self: center;
+display: flex;
 }
 .topheader_btn:hover {
     background-color: #F08815;
@@ -264,6 +284,10 @@ a {
 }
 .dropdown-toggle::after {
     margin-left: 0 !important;
+}
+.topheader_right .dropdown{
+    display: flex;
+align-self: center;
 }
 
 .navbar {
@@ -1019,7 +1043,7 @@ a {
     position: relative;
     z-index: 292;
     background-color: #334960;
-    height: 44vh;
+    height: 350px;
 }
 
 .hee {
@@ -1416,7 +1440,7 @@ a {
 footer {
     background-image: url(../img/footerBg.png);
     background-repeat: no-repeat;
-    background-position-y: -63px;
+    /* background-position-y: -63px; */
     background-size: cover;
     padding-bottom: 1rem;
     position: relative;
