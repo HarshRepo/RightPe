@@ -12,6 +12,65 @@
     width: 50px;
     height: 50px;
 }
+.bg-facebook {
+    width: 64px; height: 64px;
+    background: url('../img/css_sprites.webp') -10px -10px;
+    
+}
+.bg-instagram {
+    width: 64px; height: 64px;
+    background: url('../img/css_sprites.webp') -94px -10px;
+    
+}
+
+.bg-twitter {
+    width: 64px; height: 64px;
+    background: url('../img/css_sprites.webp') -10px -94px;
+    
+}
+
+.bg-youtube {
+    width: 64px; height: 64px;
+    background: url('../img/css_sprites.webp') -94px -94px;
+    
+}
+.icon-s5{
+    zoom: .5;
+}
+.icon-s63{
+    zoom: .63;
+}
+.icon-s43{
+    zoom: .43;
+}
+.bg-Best_Commission_Extra_Earn {
+    width: 200px; height: 200px;
+    background: url('../img/why_choose_icon.webp') -425px -5px;
+}
+.bg-24x7_Settlement {
+    width: 200px; height: 200px;
+    background: url('../img/why_choose_icon.webp') -425px -215px;
+}
+
+.bg-Trustworthy {
+    width: 200px; height: 200px;
+    background: url('../img/why_choose_icon.webp') -5px -5px;
+}
+
+.bg-Safe_Sequre_Portal {
+    width: 200px; height: 200px;
+    background: url('../img/why_choose_icon.webp') -215px -5px;
+}
+
+.bg-Fast_Support {
+    width: 200px; height: 200px;
+    background: url('../img/why_choose_icon.webp') -5px -215px;
+}
+
+.bg-Easy_to_Work {
+    width: 200px; height: 200px;
+    background: url('../img/why_choose_icon.webp') -215px -215px;
+}
 
 :root {
     --ff-body: "Poppins", sans-serif;
@@ -69,6 +128,9 @@ a {
 .typewriter_div{
     display: flex;
     margin-left: 45px;
+}
+.typewriter_div img{
+    width:30px;
 }
 
 .typewriter {
@@ -685,7 +747,7 @@ a {
     margin-bottom: 20px;
 }
 
-.wc_card:hover img {
+.wc_animation:hover {
     visibility: visible;
     animation-duration: 1300ms;
     animation-delay: 0ms;
@@ -1144,7 +1206,7 @@ a {
 }
 
 .contact_us {
-    background-image: linear-gradient(rgba(27, 26, 26, 0.688), rgba(34, 28, 28, 0.634)), url('../img/contactPage.jpg');
+    background-image: linear-gradient(rgba(27, 26, 26, 0.688), rgba(34, 28, 28, 0.634)), url('../img/contactPage.webp');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
