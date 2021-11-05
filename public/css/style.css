@@ -485,6 +485,35 @@ align-self: center;
     border: 1px solidorangered;
     margin: 20px auto;
 }
+@media screen and (max-width: 575px){
+    .carousel-caption {
+        right: 10% !important;
+        left: 10% !important;
+        top: 15%;
+    }
+    .carousel-indicators{
+        margin-bottom: 0 !important;
+    }
+    .carousel-item > img {
+        height: 250px;
+        width: 100%;
+    }
+    .banner_text{
+        padding-right: 0px;
+    }
+    .banner_text_heading {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+    .banner_text_subheading {
+        font-size: .6rem;
+        margin-bottom: 0;
+    }
+    .banner_img2 img{
+        min-height: 167px;
+        min-width: 136px;
+    }
+}
 
 @media (max-width: 767px) {
     .sub-heading {
@@ -638,7 +667,12 @@ align-self: center;
     padding: 20px !Important;
     height: 100%;
 }
-
+.tw-service{
+    padding: 60px 0px;
+}
+.tw-service .container .row{
+    margin-bottom: 60px;
+}
 .service-icon {
     width: 100%;
     position: relative;
@@ -681,6 +715,19 @@ align-self: center;
     background-color: orangered;
 }
 
+@media screen and (max-width: 575px){
+    .tw-service {
+        padding: 0;
+        margin-inline: 15px;
+    }
+    .tw-service .container .row{
+        margin-bottom: 0px;
+    }
+    .tw-service .container .col-md-4{
+        margin-bottom: 40px;
+    }
+  
+}
 /* __________________________________Our Partners___________________________ */
 
 .our_partners {
@@ -826,6 +873,23 @@ align-self: center;
     border-radius: 10px;
 }
 
+@media (max-width:575px) {
+    .wc_card_main_row{
+        display: none !important;
+    }
+    .wc_content_card {
+        width: 100%;
+        height: auto;
+        right: 0;
+        left: 0;
+        margin-bottom: 0;
+        position: relative;
+
+    }
+    .wc_us .img_div img{
+        width: 100%;
+    }
+}
 /* __________________________________Our Gallary___________________________ */
 .gallary_blk {
     height: 100vh;
@@ -924,47 +988,62 @@ align-self: center;
     margin: 10px auto;
 }
 
+
 @media (max-width: 767px) {
-    .home_sub_heading {
-        padding: 40px 20px 0;
-    }
     .home_sub_heading h2 {
         font-size: 1.9rem;
     }
+    .gallary_text h2{
+        font-size: 2rem;
+    }
+}
+@media(min-width:992px){
+    .col-md-pull-6 {
+        right: 50%
+    }
+    .col-md-push-6 {
+        left: 50%
+    }
+    .col-md-6{
+        float: left;
+        position: relative;
+    }
 }
 
+
+/* ______________________________Mobile App_______________________________ */
 .mobile_app {
     height: 100vh;
     background-color: #c7e1ff;
 }
 
 .mobile_img_div {
-    height: 73vh;
+    display: flex;
+    justify-content: center;
 }
 
-.mobile_img_div img {
+/* .mobile_img_div img {
     height: 100%;
     width: 100%;
     object-fit: contain;
-}
+} */
 
 .ma_text {
-    position: relative;
-    top: 70px;
-}
-
-.ma_text p {
     font-weight: 500;
     font-size: 1.325rem;
     margin-bottom: 20px;
     line-height: 1.6;
+    position: relative;
+    top: 70px;
 }
+
 
 .ma_input {
     display: flex;
     justify-content: start;
     flex-flow: column nowrap;
     align-items: flex-start;
+    margin-top: 95px;
 }
 
 .ma_input input {
@@ -985,6 +1064,15 @@ align-self: center;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75), 1px 0px 3px 0px rgba(0, 0, 0, 0.65) inset;
 
     color: white;
+}
+@media (max-width: 575px) {
+    .ma_text {
+        display: none;
+    }
+    .ma_input {
+        margin-top: 20px;
+        align-items: center;
+    }
 }
 
 /* _____________________Lets Talk Us___________________________ */
@@ -1044,10 +1132,36 @@ align-self: center;
     z-index: 292;
     background-color: #334960;
     height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hee {
     background-color: cyan;
+}
+
+@media (max-width:575px) {
+    .he{
+        height: 550px;
+    }
+    .talk_content_div{
+        margin-left: 0;
+    }
+    .talk_content_div h2{
+        margin-top: 0;
+        text-align: justify;
+    }
+    .talk_div{
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .talk_btn{
+        padding: 4px 15px;
+        margin-top: 10px;
+        margin-left: 0;
+    }
 }
 
 /* ___________________________________________About us Page________________________________________________________ */
@@ -1602,7 +1716,6 @@ ul.add_inner_text li, ul.add_inner_text li a {
 @media (max-width:767px) {
     footer {
         background-position-x: -348px;
-        background-position-y: -41px;
         background-size: cover;
         margin: 0;
         padding: 0;
@@ -1632,10 +1745,16 @@ ul.add_inner_text li, ul.add_inner_text li a {
 }
 
 @media (max-width:575px) {
-    .footer-content {
-        margin-bottom: 7rem;
+    .footer_grid{
+        margin-left: 0;
     }
-    .footer_grid {
-        margin-left: 5px;
+    .copyright{
+        display: flex;
+        justify-content: center;
     }
+    .copyright .social{
+        margin-top: 10px;
+        margin-bottom:10px;
+    }
+
 }
