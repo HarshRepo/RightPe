@@ -666,8 +666,7 @@ a {
     text-align: center;
     color: white;
     margin: 40px;
-    font-size: 1.3rem;
-    letter-spacing: 1.4px;
+   
 }
 
 .max-width {
@@ -685,6 +684,8 @@ a {
     line-height: 1.6rem;
     padding-bottom: 3rem;
     padding-top: 1.5rem;
+    font-size: 1.3rem;
+    letter-spacing: 1.4px;
 }
 .home_about_column1{
     position: relative;
@@ -700,6 +701,18 @@ a {
 
 .home_about_text .btn {
     padding: .475rem 1rem;
+}
+@media  screen and (max-width: 767px) {
+    .home_about_text  {
+        letter-spacing: normal;
+        margin: 20px;
+    }
+.home_about_text p {
+    text-align: justify;
+    line-height: 1.4rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
 }
 
 /* ______________________________Our Services____________________________ */
