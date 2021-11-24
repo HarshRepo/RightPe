@@ -327,7 +327,7 @@ a {
     margin-right: 50px;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
+.navbar-expand-lg .navbar-nav .nav-link:not(.nav_login_btn) {
     padding: 1rem 1rem !important;
     color: black;
     font-weight: 500;
@@ -373,7 +373,7 @@ a {
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-weight: 500;
-    border: 4px solid #F08815;
+    border: 4px solid #F08815;  
     border-radius: 45px;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75), 1px 0px 3px 0px rgba(0, 0, 0, 0.65) inset;
     transition: all 0.3s ease 0s;
@@ -452,7 +452,7 @@ a {
 
 .banner_text_heading {
     --animate-duration: 1.2s;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-align: start;
     max-width: 90%;
 }
@@ -463,7 +463,7 @@ a {
 }
 
 .banner_text_subheading {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-align: start;
     list-style-type: none;
     margin-bottom: 10px;
