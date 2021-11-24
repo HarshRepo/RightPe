@@ -1189,11 +1189,13 @@ a {
             margin-top: 20px;
         }
     }
-    @media screen and (max-width: 415px) and (max-height: 760px) {
+    @media screen and (max-width: 575px) and (max-height: 800px) {
         .mobile_img_div img {
             max-width: 135px;
         }
     }
+   
+ 
     /* _____________________Lets Talk Us___________________________ */
     .talk_content_div {
         height: 190px;
