@@ -473,6 +473,7 @@ a {
 
 .banner_img2 source, .banner_img2 img {
     --animate-duration: 1.2s;
+    max-height: 385px;
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -482,7 +483,7 @@ a {
 .carousel-caption {
     right: 0 !important;
     left: 7% !important;
-    top: 20%;
+    top: 17%;
 }
 
 .banner_text {
