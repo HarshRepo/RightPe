@@ -324,7 +324,7 @@ a {
 }
 
 .navbar-nav {
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:not(.nav_login_btn) {
@@ -366,7 +366,8 @@ a {
     text-decoration: none;
     color: white !important;
     /* height: 100%; */
-    padding: 10px 15px !important;
+    padding: 8px 15px !important;
+    margin-top:.25rem;
     font-size: 11px;
     margin-left: 10px;
     background-color: #B1273C;
