@@ -179,7 +179,7 @@ a {
     letter-spacing: 2px;
     animation: typing 11s steps(30, end) infinite, blink 1s step-end infinite;
     white-space: nowrap;
-    font-size: 1rem;
+    font-size: .85rem;
     font-weight: 500;
     border-right: 2px solid white;
     box-sizing: border-box;
@@ -310,12 +310,12 @@ a {
 }
 
 .navbar {
-    height: 70px;
+    height: 65px;
     background-color: white;
 }
 
 .navbar-brand img {
-    width: 160px;
+    width: 170px;
     margin-left: 50px;
 }
 
@@ -738,7 +738,7 @@ a {
     line-height: 1.6rem;
     padding-bottom: 3rem;
     padding-top: 1.5rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     letter-spacing: 1.4px;
 }
 
