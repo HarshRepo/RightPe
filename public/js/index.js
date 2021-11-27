@@ -11,17 +11,22 @@
 //   }
 // });
 
-function resize() {
+window.onload = function resize() {
+   
     if (($(window).width() > 1200) & ($(window).width() < 1475)) {
        $("div.home_about_img_div img").addClass('center');
     }
     else if (($(window).width() < 1200) || ($(window).width() > 1475)) {
        $("div.home_about_img_div img").removeClass('center');
     }
-
- }
+    
+ } 
  
  //watch window resize
+ 
  $(window).on('resize', function() {
     resize()
+    document.location.reload();
  });
+
+ 
