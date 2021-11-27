@@ -13,10 +13,10 @@
 
 window.onload = function resize() {
    
-    if (($(window).width() > 1200) & ($(window).width() < 1475)) {
+    if (($(window).width() > 1200) & ($(window).width() < 1600)) {
        $("div.home_about_img_div img").addClass('center');
     }
-    else if (($(window).width() < 1200) || ($(window).width() > 1475)) {
+    else if (($(window).width() < 1200) || ($(window).width() > 1600)) {
        $("div.home_about_img_div img").removeClass('center');
     }
     

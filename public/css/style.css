@@ -780,6 +780,14 @@ a {
     top: 50%;
     transform: translateY(-50%);
 }
+@media (max-width: 1200px) {
+    .center{
+        position: relative;
+        top: 0;
+        transform: none;
+    }
+}
+
 
 .home_about_text p {
     text-align: justify;
