@@ -266,6 +266,9 @@ a {
     display: flex;
     align-items: center;
 }
+.topheader .social li{
+    width: 50px;
+}
 
 .social li a img {
     width: 30px;
