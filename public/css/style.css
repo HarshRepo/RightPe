@@ -779,7 +779,7 @@ a {
     position: relative;
     text-align: center;
     color: white;
-    height: 340px;
+    height: 360px;
     margin:30px;
 
 }
@@ -810,7 +810,7 @@ a {
 .home_about_img_div{
     width: 100%;
     /* min-height: 500px; */
-    height: 430px;
+    height: 460px;
     
 }
 .home_about_img_div img{
