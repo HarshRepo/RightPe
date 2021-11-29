@@ -11,22 +11,22 @@
 //   }
 // });
 
-window.onload = function resize() {
+// window.onload = function resize() {
    
-    if (($(window).width() > 1200) & ($(window).width() < 1600)) {
-       $("div.home_about_img_div img").addClass('center');
-    }
-    else if (($(window).width() < 1200) || ($(window).width() > 1600)) {
-       $("div.home_about_img_div img").removeClass('center');
-    }
+//     if (($(window).width() > 1200) & ($(window).width() < 1600)) {
+//        $("div.home_about_img_div img").addClass('center');
+//     }
+//     else if (($(window).width() < 1200) || ($(window).width() > 1600)) {
+//        $("div.home_about_img_div img").removeClass('center');
+//     }
     
- } 
+//  } 
  
- //watch window resize
+//  //watch window resize
  
- $(window).on('resize', function() {
-    resize()
-    document.location.reload();
- });
+//  $(window).on('resize', function() {
+//     resize()
+//     document.location.reload();
+//  });
 
  
