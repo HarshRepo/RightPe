@@ -489,7 +489,12 @@ a {
 }
 
 /* __________________________________Carousal___________________________ */
-
+/* .carousel-item {
+    -webkit-transition: .2s ease-in-out left !important;
+    -moz-transition: .2s ease-in-out left !important;
+    -o-transition: .2s ease-in-out left !important;
+    transition: .2s ease-in-out left !important;
+} */
 .banner_text_heading {
     --animate-duration: 1.2s;
     font-size: 2.2rem;
@@ -1248,7 +1253,7 @@ a {
 }
 
 .bg_light {
-    background-color: #c7e1ff;
+    background-color: white;
 }
 
 .bg_blue {
@@ -1302,7 +1307,7 @@ a {
 /* ______________________________Mobile App_______________________________ */
 .mobile_app {
     height: 100vh;
-    background-color: #c7e1ff;
+    background-color: white;
 }
 
 .mobile_img_div {
@@ -1370,7 +1375,7 @@ a {
     position: relative;
     z-index: 292;
     background-color: #334960;
-    height: 240px;
+    height: 310px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1422,7 +1427,11 @@ a {
     max-width: 250px;
     object-fit: contain;
 }
-
+@media screen and (min-width:1400px){
+    .mobile_app .col-md-6.col-md-pull-6{
+        padding-left:50px;
+    }
+}
 @media screen and (max-width:992px) {
    .talk_btn{
          font-size: 1rem;
@@ -1459,7 +1468,8 @@ a {
 .about_sec1 {
     width: 100%;
     height: 300px;
-    background-color: #334960;
+    background: rgb(177,39,60);
+    background: linear-gradient(90deg, rgba(177,39,60,1) 14%, rgba(240,136,21,1) 100%);
     margin-bottom: 60px;
     display: grid;
     place-content: center;
@@ -1476,7 +1486,7 @@ a {
 }
 
 .about_sec2_content p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: justify;
 }
 
@@ -1508,7 +1518,9 @@ a {
     overflow: hidden;
     border-radius: .45rem !important;
 }
-
+.card h3{
+    font-size: 1.3rem;
+}
 .card:hover {
     box-shadow: 0 0 20px #F08815;
     border: 1px solid #B1273C;
